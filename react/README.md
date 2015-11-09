@@ -10,7 +10,7 @@ A demonstration of creating a React Component then using it several times in a W
 
 One easy way start a Web server in any directory is to use Python (installed on all Macs, for example).
 
-``sh
-cd path/to/react
+```sh
+cd path/to/examples/react
 python -m SimpleHTTPServer 8080
-``
+```
