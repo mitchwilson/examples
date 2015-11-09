@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>React Demo</title>
+    <script src="react.js"></script>
+    <script src="JSXTransformer.js"></script>
+    <script src="app.page.js" defer="defer" type="text/javascript"></script>
+    <script src="app.person.js" defer="defer" type="text/jsx"></script>
+    <link href="normalize.css" rel="stylesheet" type="text/css"></link>
+    <style type="text/css">
+        body {
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>React Coding Demo</h1>
+    <ol>
+        <li><a href="test.html?coverage&amp;noglobals">Run unit tests</a></li>
+        <li>Click buttons below</li>
+        <li>View source code using your browser</li>
+    </ol>
+    <script type="text/jsx">
+    React.render(
+        <div>
+            <Person name='mitch' food='bagels'> with cream cheese</Person>
+            <Person name='zander' food='pasta'> with pesto sauce</Person>
+            <Person name='vonnie' food='rice'> with steamed veggies</Person>
+        </div>,
+        Page.div('content')
+    );
+    </script>
+
+</body>
+</html>
